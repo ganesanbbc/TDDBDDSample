@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_landing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.cts.sample.tddbdddemo.urlfetch.LandingFragment">
+
+    <TextView
+        android:id="@+id/txt_landing_lbl_1"
+        android:text="Welcome to myApp"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Logout"
+        android:layout_weight="1"/>
+
+</RelativeLayout>
