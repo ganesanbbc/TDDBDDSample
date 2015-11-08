@@ -27,15 +27,10 @@ public class WelcomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_welcome, container, false);
-//        ButterKnife.bind(getActivity(), view);
         return view;
     }
 
 
-//    @OnClick(R.id.btn_login)
-//    public void onLoginButtonClick(View v) {
-//        mListener.onLoginButtonClicked();
-//    }
 
     @Override
     public void onAttach(Context activity) {
