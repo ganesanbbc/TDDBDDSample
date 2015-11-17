@@ -1,4 +1,4 @@
-package com.cts.sample.tddbdddemo;
+package com.cts.sample.tddbdddemo.test;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
