@@ -151,6 +151,7 @@ FileCollection generateClassDirs(Collection projects) {
                         '**/BuildConfig*',
                         '**/*Fragment*.class',
                         '**/*Activity*.class',
+                        '**/*Model*.class',
                         '**/*$ExcludeCodeCoverage*.class',
 
                 ]
