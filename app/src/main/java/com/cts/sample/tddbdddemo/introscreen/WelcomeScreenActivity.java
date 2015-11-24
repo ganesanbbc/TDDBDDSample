@@ -6,7 +6,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.widget.Toast;
 
 import com.cts.sample.tddbdddemo.R;
+import com.cts.sample.tddbdddemo.collectionmanagement.CollectionModel;
 import com.cts.sample.tddbdddemo.introscreen.WelcomeFragment.OnWelcomeFragmentInteractionListener;
+import com.google.gson.Gson;
 
 
 public class WelcomeScreenActivity extends FragmentActivity
@@ -18,6 +20,13 @@ public class WelcomeScreenActivity extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         showWelcomeFragment();
+
+        Gson gson = new Gson();
+
+        // convert java object to JSON format,
+        // and returned as JSON formatted string
+        String json = gson.toJson(new CollectionModel(10));
+        System.out.println("JSON::"+json);
 
     }
 
