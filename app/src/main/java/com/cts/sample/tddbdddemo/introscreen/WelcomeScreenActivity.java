@@ -15,19 +15,24 @@ public class WelcomeScreenActivity extends FragmentActivity
         implements OnWelcomeFragmentInteractionListener {
 
 
+    private Gson gson;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         showWelcomeFragment();
 
-        Gson gson = new Gson();
+        testGSON();
 
+    }
+
+    private void testGSON() {
+        gson = new Gson();
         // convert java object to JSON format,
         // and returned as JSON formatted string
         String json = gson.toJson(new CollectionModel(10));
         System.out.println("JSON::"+json);
-
     }
 
 
