@@ -22,4 +22,17 @@ public class CollectionModel {
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(id);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if(o instanceof CollectionModel) {
+            return ((CollectionModel) o).getId() == id;
+        }
+        return super.equals(o);
+    }
 }
