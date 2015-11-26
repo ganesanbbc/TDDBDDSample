@@ -16,7 +16,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
@@ -36,6 +36,8 @@ public class ReorderCollectionListImplTest {
         int oldIndex = 0;
         int newIndex = 2;
         List<CollectionModel> newCollectionList = nCList.reorderList(oldCollectionList, oldIndex, newIndex);
-        Assert.assertNotSame("Not equals", oldCollectionList.get(oldIndex).getId(), newCollectionList.get(newIndex).getId());
+        Assert.assertNotNull(newCollectionList);
+        assertThat(oldCollectionList, not(newCollectionList));
+//        Assert.assertNotSame("Not equals", oldCollectionList.get(oldIndex).getId(), newCollectionList.get(newIndex).getId());
     }
 }
