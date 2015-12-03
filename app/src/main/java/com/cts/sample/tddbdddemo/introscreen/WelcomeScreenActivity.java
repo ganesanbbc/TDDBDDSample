@@ -10,6 +10,8 @@ import com.cts.sample.tddbdddemo.collectionmanagement.CollectionModel;
 import com.cts.sample.tddbdddemo.introscreen.WelcomeFragment.OnWelcomeFragmentInteractionListener;
 import com.google.gson.Gson;
 
+import java.util.ArrayList;
+
 
 public class WelcomeScreenActivity extends FragmentActivity
         implements OnWelcomeFragmentInteractionListener {
@@ -31,7 +33,11 @@ public class WelcomeScreenActivity extends FragmentActivity
         gson = new Gson();
         // convert java object to JSON format,
         // and returned as JSON formatted string
-        String json = gson.toJson(new CollectionModel(10));
+        ArrayList<CollectionModel> models = new ArrayList<>();
+        models.add(new CollectionModel(10));
+        models.add(new CollectionModel(13));
+        models.add(new CollectionModel(14));
+        String json = gson.toJson(models);
         System.out.println("JSON::"+json);
     }
 

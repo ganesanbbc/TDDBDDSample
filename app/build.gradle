@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "21.1.2"
+    buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "com.cts.sample.tddbdddemo"
@@ -65,4 +65,11 @@ dependencies {
 
 configurations.all {
     resolutionStrategy.force 'com.android.support:support-annotations:22.0.0'
+}
+
+task runAllTests(dependsOn: ['clean', 'build', 'connectedAndroidTest'])
+build.mustRunAfter 'clean'
+tasks.whenTaskAdded { task ->
+    if (task.name == 'connectedAndroidTest')
+        task.dependsOn build
 }
