@@ -1,5 +1,6 @@
 package com.cts.sample.tddbdddemo.introscreen;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -8,6 +9,8 @@ import android.widget.Toast;
 import com.cts.sample.tddbdddemo.R;
 import com.cts.sample.tddbdddemo.collectionmanagement.CollectionModel;
 import com.cts.sample.tddbdddemo.introscreen.WelcomeFragment.OnWelcomeFragmentInteractionListener;
+import com.cts.sample.tddbdddemo.syncsample.SyncService;
+import com.cts.sample.tddbdddemo.syncsample.SyncServiceHelper;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -27,6 +30,7 @@ public class WelcomeScreenActivity extends FragmentActivity
 
         testGSON();
 
+        SyncServiceHelper.showNotification(this, true);
     }
 
     private void testGSON() {
@@ -38,7 +42,7 @@ public class WelcomeScreenActivity extends FragmentActivity
         models.add(new CollectionModel(13));
         models.add(new CollectionModel(14));
         String json = gson.toJson(models);
-        System.out.println("JSON::"+json);
+        System.out.println("JSON::" + json);
     }
 
 
