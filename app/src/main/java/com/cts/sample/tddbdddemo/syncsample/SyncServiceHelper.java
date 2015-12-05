@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+import com.cts.sample.tddbdddemo.R;
 import com.cts.sample.tddbdddemo.introscreen.WelcomeScreenActivity;
 
 import java.text.ParseException;
@@ -32,6 +33,7 @@ public class SyncServiceHelper {
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(context)
+                        .setSmallIcon(R.mipmap.ic_statusbar_notification)
                         .setContentTitle("Notification Sample")
                         .setContentIntent(pIntent)
                         .setContentText(notificationText);

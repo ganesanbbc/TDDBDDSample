@@ -1,0 +1,1629 @@
+[
+  {
+    type: "hero-promos",
+    title: "Hero promo Module",
+    model: {
+      promos: [
+        {
+          title: "Instagram 1234",
+          attribution: "înstagram & M",
+          url: "https://instagram.com/",
+          image: {
+            templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00w7w34.jpg"
+          },
+          liveBadge: true,
+          promoTopic: "other"
+        },
+        {
+          title: "Jon test 2",
+          attribution: "news",
+          url: "http://www.bbc.co.uk/news",
+          image: {
+            templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00x1tjs.jpg"
+          },
+          liveBadge: true,
+          promoTopic: "sport"
+        },
+        {
+          title: "Jon Test 3",
+          attribution: "budgies",
+          url: "http://www.bbc.co.uk/lifestyle",
+          image: {
+            templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00txl9r.jpg"
+          },
+          promoTopic: "other"
+        }
+      ],
+      name: "Hero promo Module",
+      nation: "uk"
+    },
+    status: "success"
+  },
+  {
+    type: "local-news",
+    title: "Local News",
+    status: "error"
+  },
+  {
+    type: "top-stories",
+    title: "Latest News",
+    model: [
+      {
+        urn: "urn:bbc:cps:news:uk-england-london:35007848",
+        title: "Cult leader guilty of sex assaults",
+        url: "http://www.bbc.co.uk/news/uk-england-london-35007848",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/118FC/production/_86923917_86923915.jpg",
+          altText: "Aravindan Balakrishnan",
+          copyright: "PA"
+        },
+        attribution: "London",
+        assetType: "article",
+        liveBadge: false,
+        description: "A Maoist cult leader who ran a commune is found guilty of a string of sex assaults, cruelty to a child and false imprisonment.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-cumbria:35003649",
+        title: "Flooding leads to 'horrific conditions'",
+        url: "http://www.bbc.co.uk/news/uk-england-cumbria-35003649",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/0B4C/production/_87029820_87029374.jpg",
+          altText: "Flooding in Flimby",
+          copyright: "BBC"
+        },
+        attribution: "Cumbria",
+        assetType: "article",
+        liveBadge: false,
+        description: "Flooding brings chaos to parts of Cumbria with disruption on the roads and rails leading to \"horrific conditions\".",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-merseyside:35007964",
+        title: "New Beatles statue unveiled",
+        url: "http://www.bbc.co.uk/news/uk-england-merseyside-35007964",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/15F9E/production/_87041009_img_3091.jpg",
+          altText: "The new Beatles statue in Liverpool",
+          copyright: "BBC"
+        },
+        attribution: "Liverpool",
+        assetType: "article",
+        liveBadge: false,
+        description: "Fifty years on from their final performance in their home city, a new statue of The Beatles is unveiled in Liverpool.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-london:35009032",
+        title: "Heist jury hears raiders' bragging",
+        url: "http://www.bbc.co.uk/news/uk-england-london-35009032",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/4AF9/production/_87039191_hattongarden.jpg",
+          altText: "Guilty plea Hatton Garden raiders",
+          copyright: "Met Police"
+        },
+        attribution: "London",
+        assetType: "article",
+        liveBadge: false,
+        description: "The jury in the Hatton Gardens trial hears recordings of the men accused of the biggest burglary in English history bragging about the £14m heist.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-tyne:35004643",
+        title: "Early Viz stockist confirmed dead",
+        url: "http://www.bbc.co.uk/news/uk-england-tyne-35004643",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/17C7B/production/_87030479_briansandells.jpg",
+          altText: "Brian Sandells",
+          copyright: "family photo"
+        },
+        attribution: "Tyne & Wear",
+        assetType: "article",
+        liveBadge: false,
+        description: "Police confirm that the body found at the burnt-out Kard Bar shop in Newcastle city centre is the owner Brian Sandells, one of the early supporters of Viz magazine.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-south-yorkshire:35004370",
+        title: "Stab killer was on licence for murder",
+        url: "http://www.bbc.co.uk/news/uk-england-south-yorkshire-35004370",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/17041/production/_87037249_birleyandnichols.jpg",
+          altText: "Ian Birley and Helen Nichols",
+          copyright: "South Yorkshire Police"
+        },
+        attribution: "Sheffield & South Yorkshire",
+        assetType: "article",
+        liveBadge: false,
+        description: "A man found guilty of stabbing a man to death during a robbery was out on licence at the time after serving 18 years of a life term for murder.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-birmingham:35005878",
+        title: "Bishop-carjacking robber jailed",
+        url: "http://www.bbc.co.uk/news/uk-england-birmingham-35005878",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/8E01/production/_87035363_bishop.jpg",
+          altText: "David Charmbury",
+          copyright: "BBC"
+        },
+        attribution: "Birmingham & Black Country",
+        assetType: "article",
+        liveBadge: false,
+        description: "A man who carjacked a Mormon bishop with his own car in a \"brutal\" attack is jailed for six years.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-birmingham:35011061",
+        title: "Pig head dumper cleared of racist abuse",
+        url: "http://www.bbc.co.uk/news/uk-england-birmingham-35011061",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/65BB/production/_87034062_87034011.jpg",
+          altText: "Carl Stephenson",
+          copyright: "BBC"
+        },
+        attribution: "Birmingham & Black Country",
+        assetType: "article",
+        liveBadge: false,
+        description: "A man who admitted dumping four pigs' heads outside a community centre hired for an Islamic event is cleared of racial harassment.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-bristol:35005207",
+        title: "MP admits calfskin decision error",
+        url: "http://www.bbc.co.uk/news/uk-england-bristol-35005207",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/10601/production/_87037076_dsc_0645-003.jpg",
+          altText: "Parliament's Vellum rolls",
+          copyright: "UK Parliament/Jessica Taylor"
+        },
+        attribution: "England",
+        assetType: "article",
+        liveBadge: false,
+        description: "One of the MPs who backed moves to scrap Parliament's centuries-old tradition of printing laws on calf skin admits he \"made a mistake\".",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-hampshire:35007426",
+        title: "Restaurant loses pink burger case",
+        url: "http://www.bbc.co.uk/news/uk-england-hampshire-35007426",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/B7CD/production/_87035074_6oz.jpg",
+          altText: "6oz Burgers",
+          copyright: "Google"
+        },
+        attribution: "Hampshire & Isle of Wight",
+        assetType: "article",
+        liveBadge: false,
+        description: "An emergency ban on a Portsmouth restaurant serving burgers that were pink in the middle is ruled lawful by a judge.",
+        cta: { }
+      }
+    ],
+    isNew: false,
+    footer: {
+      title: "More News",
+      url: "http://www.bbc.co.uk/news"
+    },
+    colorPalette: "news",
+    status: "success"
+  },
+  {
+    type: "local-news",
+    title: "Local News 2",
+    status: "error"
+  },
+  {
+    type: "top-stories",
+    title: "Topstory by promo paired",
+    model: [
+      {
+        title: "Instagram 1234",
+        attribution: "înstagram & M",
+        url: "https://instagram.com/",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00w7w34.jpg"
+        },
+        liveBadge: true,
+        promoTopic: "other",
+        cta: { }
+      },
+      {
+        title: "Twitter",
+        attribution: "twitter",
+        url: "https://twitter.com/?lang=en-gb",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00x1thx.jpg"
+        },
+        promoTopic: "sport",
+        cta: { }
+      },
+      {
+        title: "Test Promo 1-AutomationéÈl Dùn Eideann",
+        attribution: "NewséÉ Dùn Eideann",
+        url: "http://www.test.bbc.co.uk/news",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00v56lt.jpg",
+          templateUrlCropped: "ichef.test.bbci.co.uk/images/ic/$recipe/p00tx6ng.jpg"
+        },
+        liveBadge: true,
+        promoTopic: "news",
+        cta: { }
+      }
+    ],
+    isNew: true,
+    footer: {
+      title: "More bbc",
+      url: "http://www.bbc.co.uk/contact"
+    },
+    colorPalette: "news",
+    status: "success"
+  },
+  {
+    type: "top-stories",
+    title: "container height",
+    model: [
+      {
+        urn: "urn:bbc:nitro:p038mnt3",
+        title: "Traed Moch, Diwrnod Mawr Dadi",
+        url: "http://www.bbc.co.uk/iplayer/episode/p038mnt3",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p02qblyy.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Diwrnod Mawr Dadi",
+          series: "Traed Moch",
+          brand: null
+        },
+        attribution: "S4C",
+        duration: {
+          dateTime: "PT23M",
+          formatted: "23 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Cyfres gartwn am deulu o foch a'u ffrindiau ar y fferm. Cartoon series following the ad...",
+        cta: {
+          type: "video",
+          text: "Watch video"
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:p02r51b5",
+        title: "Y Brodyr Adrenalini, Cyfres 2013, Antur yr Afon",
+        url: "http://www.bbc.co.uk/iplayer/episode/p02r51b5",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p02fmdp8.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Antur yr Afon",
+          series: "Cyfres 2013",
+          brand: "Y Brodyr Adrenalini"
+        },
+        attribution: "S4C",
+        duration: {
+          dateTime: "PT6M52S",
+          formatted: "6 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Mae'r Brodyr yn croesi afon ac yn cwrdd â'u gelyn pennaf. The Brothers cross a river an...",
+        cta: {
+          type: "video",
+          text: "Watch video"
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:p038mnnf",
+        title: "Prynhawn Da, Fri, 04 Dec 2015",
+        url: "http://www.bbc.co.uk/iplayer/episode/p038mnnf",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p03b30bf.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Fri, 04 Dec 2015",
+          series: null,
+          brand: "Prynhawn Da"
+        },
+        attribution: "S4C",
+        duration: {
+          dateTime: "PT42M7S",
+          formatted: "42 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Catrin Thomas sy'n paratoi'r cwrs cyntaf ar gyfer Cinio Nadolig ac mae cystadleuaeth y ...",
+        cta: {
+          type: "video",
+          text: "Watch video"
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:p02p9535",
+        title: "Sbridiri, Cyfres 2, Anifeiliaid",
+        url: "http://www.bbc.co.uk/iplayer/episode/p02p9535",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p02d6qsl.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Anifeiliaid",
+          series: "Cyfres 2",
+          brand: "Sbridiri"
+        },
+        attribution: "S4C",
+        duration: {
+          dateTime: "PT18M30S",
+          formatted: "18 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Yn y rhaglen hon mae Twm a Lisa yn creu eliffant i ddal brwsus paent. In this programme...",
+        cta: {
+          type: "video",
+          text: "Watch video"
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:p02b4s9d",
+        title: "Wibli Sochyn y Mochyn, Hetiau",
+        url: "http://www.bbc.co.uk/iplayer/episode/p02b4s9d",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p02cg74j.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Hetiau",
+          series: "Wibli Sochyn y Mochyn",
+          brand: null
+        },
+        attribution: "S4C",
+        duration: {
+          dateTime: "PT10M2S",
+          formatted: "10 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Mae'n ddiwrnod gwyntog iawn ac mae Wibli yn gofalu am hoff het Tadcu ond mae'r gwynt yn...",
+        cta: {
+          type: "video",
+          text: "Watch video"
+        }
+      }
+    ],
+    isNew: false,
+    footer: {
+      title: "container height",
+      url: "http://m.test.bbc.co.uk/#"
+    },
+    colorPalette: "news",
+    status: "success"
+  },
+  {
+    type: "top-stories",
+    title: "Top Stories -Template 01",
+    model: [
+      {
+        urn: "urn:bbc:cps:news:business:13316133",
+        title: "Bringing babies into the workplace",
+        url: "http://www.bbc.co.uk/news/business-13316133",
+        attribution: "Business",
+        assetType: "article",
+        liveBadge: false,
+        description: "Should parents be encouraged to bring their children into the office?",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:32959479",
+        title: "Sportsday - rolling football news",
+        url: "http://www.bbc.co.uk/sport/live/32959479",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/mcs/media/images/83492000/jpg/_83492738_ghghjg.jpg",
+          altText: "Pat Bonner",
+          copyright: "Getty Images"
+        },
+        attribution: "Sportsday",
+        assetType: "article",
+        liveBadge: true,
+        description: "West Ham to name new boss, Liverpool sign Burnley's Danny Ings, Italia 90 memories, Women's World Cup, debate and the best of social media.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-politics:35003152",
+        title: "Corbyn: Poll win shows Labour strength",
+        url: "http://www.bbc.co.uk/news/uk-politics-35003152",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/3CFD/production/_87031651_corbynoldham.jpg",
+          altText: "Jim McMahon (left) and Jeremy Corbyn (right)",
+          copyright: "BBC"
+        },
+        attribution: "UK Politics",
+        assetType: "article",
+        liveBadge: false,
+        description: "Jeremy Corbyn says Labour's comfortable Oldham by-election win shows his anti-austerity message has broad appeal.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-politics:35004172",
+        title: "Two MPs face police expenses probe",
+        url: "http://www.bbc.co.uk/news/uk-politics-35004172",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/17979/production/_87033669_87033668.jpg",
+          altText: "Houses of Parliament",
+          copyright: "PA"
+        },
+        attribution: "UK Politics",
+        assetType: "article",
+        liveBadge: false,
+        description: "The Metropolitan Police are investigating two MPs over alleged misuse of parliamentary expenses after being brought in by the independent watchdog.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-politics:35009342",
+        title: "Watson: Corbyn lobby group 'a rabble'",
+        url: "http://www.bbc.co.uk/news/uk-politics-35009342",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/11EC6/production/_87041437_watson.jpg",
+          altText: "Tom Watson",
+          copyright: "BBC"
+        },
+        attribution: "UK Politics",
+        assetType: "article",
+        liveBadge: false,
+        description: "Labour's deputy leader Tom Watson dismisses Momentum, a pro-Jeremy Corbyn pressure group accused of targeting pro-war MPs, as a \"bit of a rabble\".",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:live:uk-politics:35000700",
+        title: "Friday recap: Oldham by-election reaction",
+        url: "http://www.bbc.co.uk/news/live/uk-politics-35000700",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/E8BE/production/_87028595_87028594.jpg",
+          altText: "New Labour MP Jim McMahon",
+          copyright: "PA"
+        },
+        attribution: "UK Politics",
+        assetType: "article",
+        liveBadge: true,
+        description: "Coverage of reaction to the result of the Oldham West and Royton by-election.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:world-europe:35005410",
+        title: "Germany warns UK on rules for migrants",
+        url: "http://www.bbc.co.uk/news/world-europe-35005410",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/8470/production/_87040933_mcallafp.jpg",
+          altText: "German MEP David McAllister, file pic",
+          copyright: "AFP"
+        },
+        attribution: "Europe",
+        assetType: "article",
+        liveBadge: false,
+        description: "A top German politician says David Cameron's call for a four-year delay before EU migrants can claim certain benefits is \"highly problematic\".",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk:35011984",
+        title: "RAF fighter jets deployed from Cyprus",
+        url: "http://www.bbc.co.uk/news/uk-35011984",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/0A5E/production/_87045620_typhoonreuters.jpg",
+          altText: "A RAF Typhoon leaving for a mission from RAF Akrotiri in Cyprus",
+          copyright: "Reuters"
+        },
+        attribution: "UK",
+        assetType: "article",
+        liveBadge: false,
+        description: "Two Typhoon jets leave the RAF's base in Cyprus for the first time since MPs backed military action against so-called Islamic State in Syria.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-politics:35004544",
+        title: "UKIP considering 'poll fraud' evidence",
+        url: "http://www.bbc.co.uk/news/uk-politics-35004544",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/F369/production/_87031326_87030355.jpg",
+          altText: "Nigel Farage with UKIP candidate John Bickley",
+          copyright: "PA"
+        },
+        attribution: "UK Politics",
+        assetType: "article",
+        liveBadge: false,
+        description: "UKIP is to \"review the evidence\" before deciding whether to make a formal complaint about what it suggests may have been electoral fraud in the Oldham West and Royton by-election.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:uk-england-bristol:35005207",
+        title: "MP admits calfskin decision error",
+        url: "http://www.bbc.co.uk/news/uk-england-bristol-35005207",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/10601/production/_87037076_dsc_0645-003.jpg",
+          altText: "Parliament's Vellum rolls",
+          copyright: "UK Parliament/Jessica Taylor"
+        },
+        attribution: "England",
+        assetType: "article",
+        liveBadge: false,
+        description: "One of the MPs who backed moves to scrap Parliament's centuries-old tradition of printing laws on calf skin admits he \"made a mistake\".",
+        cta: { }
+      }
+    ],
+    isNew: true,
+    footer: {
+      title: "More from News",
+      url: ""
+    },
+    colorPalette: "news",
+    status: "success"
+  },
+  {
+    type: "top-stories",
+    title: "Top Stories -Template 02",
+    model: [
+      {
+        urn: "urn:bbc:cps:news:business:13316133",
+        title: "Bringing babies into the workplace",
+        url: "http://www.bbc.co.uk/news/business-13316133",
+        attribution: "Business",
+        assetType: "article",
+        liveBadge: false,
+        description: "Should parents be encouraged to bring their children into the office?",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:arts:zvstgk7",
+        title: "superrrr mario",
+        url: "http://mariolol",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00t4wtf.jpg",
+          altText: null,
+          copyright: null
+        },
+        attribution: "Arts",
+        assetType: "arts",
+        liveBadge: false,
+        description: null,
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:arts:zfrvd2p",
+        title: "Test on 13.04.2015",
+        url: "google.com",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00w278s.jpg",
+          altText: null,
+          copyright: null
+        },
+        attribution: "Arts",
+        assetType: "arts",
+        liveBadge: false,
+        description: null,
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:arts:zw4gq6f",
+        title: "How do we sing?",
+        url: "http://www.bbc.co.uk/guides/zqtpfg8",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00w5sbk.jpg",
+          altText: null,
+          copyright: null
+        },
+        attribution: "Arts",
+        assetType: "arts",
+        liveBadge: false,
+        description: null,
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:arts:zqmqsbk",
+        title: "Simple parent link test with standard promo",
+        url: "http://google.com",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00tb4z9.jpg",
+          altText: null,
+          copyright: null
+        },
+        attribution: "Arts",
+        assetType: "arts",
+        liveBadge: false,
+        description: null,
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:arts:z7x7fg8",
+        title: "Simple parent link test with super promo ",
+        url: "http://bbc.co.uk",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/images/ic/$recipe/p00tb53z.jpg",
+          altText: null,
+          copyright: null
+        },
+        attribution: "Arts",
+        assetType: "arts",
+        liveBadge: false,
+        description: null,
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:nitro:p00db24v",
+        title: "Zoo Quest, Zoo Quest to Madagascar, Episode 1",
+        url: "http://www.bbc.co.uk/iplayer/episode/p00db24v",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p01hz73r.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: "Episode 1",
+          episode: null,
+          series: "Zoo Quest to Madagascar",
+          brand: "Zoo Quest"
+        },
+        duration: {
+          dateTime: "PT29M24S",
+          formatted: "29 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "David Attenborough searches for the strange creatures that inhabit Madagascar. (1961)",
+        cta: {
+          type: "video",
+          text: "Watch video"
+        }
+      }
+    ],
+    isNew: true,
+    footer: {
+      title: "More from Sports",
+      url: "http://m.bbc.co.uk/sport"
+    },
+    colorPalette: "sport",
+    status: "success"
+  },
+  {
+    type: "top-stories",
+    title: "Top Stories -Template 04",
+    model: [
+      {
+        urn: "urn:bbc:cps:newsbeat:articles:35008095",
+        title: "This is how much a real Death Star would cost",
+        url: "http://www.bbc.co.uk/newsbeat/articles/35008095",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/12681/production/_87039357_death_star_getty_976.jpg",
+          altText: "Model of the Death Star",
+          copyright: "Getty Images"
+        },
+        attribution: "Home",
+        assetType: "article",
+        liveBadge: false,
+        description: "Students at a university in the US work out how much it would cost to build the Death Star for real.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:entertainment-arts:35004564",
+        title: "China box office grows by 48 percent",
+        url: "http://www.bbc.co.uk/news/entertainment-arts-35004564",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/15769/production/_87031978_pointbreak1_ap.jpg",
+          altText: "Point Break star Luke Bracey in Beijing",
+          copyright: "AP"
+        },
+        attribution: "Entertainment & Arts",
+        assetType: "article",
+        liveBadge: false,
+        description: "China's box office takings have gone up by almost 50 percent this year, with total sales now in excess of 40 billion yuan ($6.3 billion or £4.1 billion).",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:entertainment-arts:34982615",
+        title: "Can F rating beat Hollywood sexism?",
+        url: "http://www.bbc.co.uk/news/entertainment-arts-34982615",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/15B64/production/_87023988_carolap.jpg",
+          altText: "Cate Blanchett in Carol",
+          copyright: "AP"
+        },
+        attribution: "Entertainment & Arts",
+        assetType: "article",
+        liveBadge: false,
+        description: "Could a new F rating - for films made by women or with major roles for women - help close the gender gap in the film industry?",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:news:entertainment-arts:35002435",
+        title: "Star Wars: UK duo ready for opening day",
+        url: "http://www.bbc.co.uk/news/entertainment-arts-35002435",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/C08C/production/_87029294_87027159.jpg",
+          altText: "John Boyega and Daisy Ridley",
+          copyright: "BBC"
+        },
+        attribution: "Entertainment & Arts",
+        assetType: "video",
+        liveBadge: false,
+        description: "The British stars of the new Star Wars film have told the BBC they feel \"no pressure\" over how it will be received.",
+        cta: {
+          type: "video",
+          text: "Watch video"
+        }
+      },
+      {
+        urn: "urn:bbc:cps:news:world-europe:35001030",
+        title: "Peter Jackson enters Gollum tweet row",
+        url: "http://www.bbc.co.uk/news/world-europe-35001030",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/16858/production/_86984229_gettyimages-157046927.jpg",
+          altText: "A poster for the film The Hobbit showing Gollum",
+          copyright: "Getty Images"
+        },
+        attribution: "Europe",
+        assetType: "article",
+        liveBadge: false,
+        description: "Lord of the Rings director Peter Jackson says an image apparently comparing Turkey's president to the character Gollum actually shows Smeagol.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:newyddion:35005192",
+        title: "Hen Lyfrgell: Creu 40 o swyddi",
+        url: "http://www.bbc.co.uk/newyddion/35005192",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/1124F/production/_87032207_ac21e877-67ac-47d8-91b1-dcc579f877b4.jpg",
+          altText: "hen lyfrgell",
+          copyright: "BBC"
+        },
+        attribution: "De-Ddwyrain",
+        assetType: "article",
+        liveBadge: false,
+        description: "Creu mwy na 40 o swyddi yng nghanolfan Gymraeg newydd Caerdydd, Yr Hen Lyfrgell.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:newyddion:35005196",
+        title: "Ymosod ar heddwas: Carcharu tri",
+        url: "http://www.bbc.co.uk/newyddion/35005196",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/14464/production/_87044038_picmonkeycollage.jpg",
+          altText: "Dennis Taylor (chwith), Jacob Marriott (canol) a Rachel Heron (dde",
+          copyright: "Heddlu De Cymru"
+        },
+        attribution: "De-Ddwyrain",
+        assetType: "article",
+        liveBadge: false,
+        description: "Tri wedi eu carcharu am eu rhan mewn ymosodiad 'ffiaidd' ar heddwas yng Nghaerdydd.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:newyddion:35010621",
+        title: "Cyngor Caerdydd am dorri gwasanaethau",
+        url: "http://www.bbc.co.uk/newyddion/35010621",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/0D88/production/_87046430_e63cdb02-65d4-4c25-a4e5-6dc49dceaebb.jpg",
+          altText: "caerdydd",
+          copyright: "BBC"
+        },
+        attribution: "Newyddion a mwy",
+        assetType: "article",
+        liveBadge: false,
+        description: "Cyngor Caerdydd yn bwriadu cynyddu'r dreth gyngor yn ogystal â chodi pris prydau ysgol oherwydd cynlluniau newydd.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:newyddion:35000642",
+        title: "Storm Desmond i daro Cymru",
+        url: "http://www.bbc.co.uk/newyddion/35000642",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/14ED2/production/_86941758_zz71.jpg",
+          altText: "Gwynt a glaw",
+          copyright: "PA"
+        },
+        attribution: "Newyddion a mwy",
+        assetType: "article",
+        liveBadge: false,
+        description: "Rhybudd y gallai Storm Desmond olygu gwyntoedd o dros 70 mya yng ngogledd a chanolbarth Cymru dros y penwythnos.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:newyddion:34993730",
+        title: "Carcharu llofrudd cenfigennus",
+        url: "http://www.bbc.co.uk/newyddion/34993730",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/7379/production/_87016592_athn_jealous_boyfriend_killer_4449.jpg",
+          altText: "David Dunn",
+          copyright: "other"
+        },
+        attribution: "De-Ddwyrain",
+        assetType: "article",
+        liveBadge: false,
+        description: "Llys ym Merthyr yn clywed fod cariad cenfigennus wedi llofruddio ei gymydog gan amau ei fod wedi cysgu gyda'i bartner.",
+        cta: { }
+      }
+    ],
+    isNew: false,
+    footer: {
+      title: "More from other",
+      url: "http://www.bbc.com/earth/uk"
+    },
+    colorPalette: "default",
+    status: "success"
+  },
+  {
+    type: "top-stories",
+    title: "Temp 01 pairing1",
+    model: [
+      {
+        urn: "urn:bbc:cps:sport:live:football:34358666",
+        title: "FA Cup: Watch Salford v Hartlepool",
+        url: "http://www.bbc.co.uk/sport/live/football/34358666",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/14A4/production/_87048250_rhysoates_pa.jpg",
+          altText: "Rhys Oates celebrates",
+          copyright: "PA"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: true,
+        description: "Watch live BBC Two coverage, plus follow text and radio commentary from the second round of the FA Cup.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:rugby-union:34922092",
+        title: "Ulster v Edinburgh",
+        url: "http://www.bbc.co.uk/sport/live/rugby-union/34922092",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/D1F3/production/_86874735_luke_marshall_rex.jpg",
+          altText: "Ulster's Luke Marshall",
+          copyright: "Rex Features"
+        },
+        attribution: "Rugby Union",
+        assetType: "article",
+        liveBadge: true,
+        description: "Watch live BBC Two NI and Scotland coverage as Ulster face Edinburgh in the latest round of Pro 12 matches.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:snooker:34358398",
+        title: "Snooker - UK Championship",
+        url: "http://www.bbc.co.uk/sport/live/snooker/34358398",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/0C7F/production/_86999130_mark_selby_pa.jpg",
+          altText: "Mark Selby",
+          copyright: "PA"
+        },
+        attribution: "Snooker",
+        assetType: "article",
+        liveBadge: true,
+        description: "Watch live BBC Snooker coverage as York's Barbican Centre hosts the UK Championship.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:football:35012434",
+        title: "Fifa official paid £6.6m bribe - FBI",
+        url: "http://www.bbc.co.uk/sport/football/35012434",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/13D2/production/_87047050_fifa.jpg",
+          altText: "Fifa",
+          copyright: "PA"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: false,
+        description: "A high-ranking Fifa official is identified by the FBI as a suspect in a £6.6m bribe paid in return for votes for 2010 World Cup.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:rugby-union:33847304",
+        title: "Cardiff Blues v Connacht",
+        url: "http://www.bbc.co.uk/sport/live/rugby-union/33847304",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/59BE/production/_87047922_bluestry.jpg",
+          altText: "Cardiff Blues score against Connacht",
+          copyright: "Huw Evans picture agency"
+        },
+        attribution: "Rugby Union",
+        assetType: "article",
+        liveBadge: true,
+        description: "Watch and listen to live Scrum V coverage as Blues take on Connacht in the latest round of Pro12 matches.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:football:34969129",
+        title: "Ipswich 0-0 Middlesbrough",
+        url: "http://www.bbc.co.uk/sport/live/football/34969129",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/9C94/production/_87048004_rexfeatures_5470586w.jpg",
+          altText: "Brett Pitman Ben Gibson",
+          copyright: "Rex Features"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: true,
+        description: "Follow live text coverage as Ipswich host Middlesbrough in the Championship. Kick-off 19:45 GMT.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:rugby-union:34701872",
+        title: "Gloucester v Sale",
+        url: "http://www.bbc.co.uk/sport/live/rugby-union/34701872",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/18000/production/_87040389_billy_twelvetrees.jpg",
+          altText: "Billy Twelvetrees",
+          copyright: "Getty Images"
+        },
+        attribution: "Rugby Union",
+        assetType: "article",
+        liveBadge: true,
+        description: "Follow live text and radio commentary from the Premiership as Gloucester host Sale Sharks at Kingsholm.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:football:35008384",
+        title: "Lazio v Juventus & Nice v PSG",
+        url: "http://www.bbc.co.uk/sport/live/football/35008384",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/520C/production/_87040012_gianluigibuffon_getty.jpg",
+          altText: "Gianluigi Buffon",
+          copyright: "Getty Images"
+        },
+        attribution: "European Football",
+        assetType: "article",
+        liveBadge: true,
+        description: "Follow live text commentary as Lazio host Juventus, while Ligue 1 leaders Paris St-Germain are at Nice.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:cycling:34999053",
+        title: "Data 'will not convince everyone'",
+        url: "http://www.bbc.co.uk/sport/cycling/34999053",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/177B6/production/_87028169_chrisfroome.jpg",
+          altText: "Chris Froome signing autographs",
+          copyright: "Getty Images"
+        },
+        attribution: "Cycling",
+        assetType: "article",
+        liveBadge: false,
+        description: "Double Tour de France champion Chris Froome releases blood and performance data in a bid to prove he is a clean rider.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:cricket:35009827",
+        title: "Women's Big Bash League set to begin",
+        url: "http://www.bbc.co.uk/sport/cricket/35009827",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/12C4/production/_87040840_womens_big_bash_getty.jpg",
+          altText: "Australian players launch the Women's Big Bash League",
+          copyright: "Getty Images"
+        },
+        attribution: "Women's Cricket",
+        assetType: "article",
+        liveBadge: false,
+        description: "The inaugural Women's Big Bash League gets under way in Australia on Saturday - with nine current England players involved.",
+        cta: { }
+      }
+    ],
+    isNew: false,
+    footer: {
+      title: "More from other",
+      url: "http://www.bbc.com/earth/uk"
+    },
+    colorPalette: "news",
+    status: "success"
+  },
+  {
+    type: "top-stories",
+    title: "Temp 01 pairing2",
+    model: [
+      {
+        urn: "urn:bbc:cps:sport:live:football:34358666",
+        title: "FA Cup: Watch Salford v Hartlepool",
+        url: "http://www.bbc.co.uk/sport/live/football/34358666",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/14A4/production/_87048250_rhysoates_pa.jpg",
+          altText: "Rhys Oates celebrates",
+          copyright: "PA"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: true,
+        description: "Watch live BBC Two coverage, plus follow text and radio commentary from the second round of the FA Cup.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:football:35008384",
+        title: "Lazio v Juventus & Nice v PSG",
+        url: "http://www.bbc.co.uk/sport/live/football/35008384",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/520C/production/_87040012_gianluigibuffon_getty.jpg",
+          altText: "Gianluigi Buffon",
+          copyright: "Getty Images"
+        },
+        attribution: "European Football",
+        assetType: "article",
+        liveBadge: true,
+        description: "Follow live text commentary as Lazio host Juventus, while Ligue 1 leaders Paris St-Germain are at Nice.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:live:football:34969129",
+        title: "Ipswich 0-0 Middlesbrough",
+        url: "http://www.bbc.co.uk/sport/live/football/34969129",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/9C94/production/_87048004_rexfeatures_5470586w.jpg",
+          altText: "Brett Pitman Ben Gibson",
+          copyright: "Rex Features"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: true,
+        description: "Follow live text coverage as Ipswich host Middlesbrough in the Championship. Kick-off 19:45 GMT.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:football:35006347",
+        title: "Rooney ruled out with ankle injury",
+        url: "http://www.bbc.co.uk/sport/football/35006347",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/1207D/production/_87035837_rooney_large_getty.jpg",
+          altText: "Manchester United captain Wayne Rooney",
+          copyright: "Getty Images"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: false,
+        description: "Wayne Rooney will miss Manchester United's pivotal Champions League tie at Wolfsburg with a \"nasty\" ankle injury.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:football:34985230",
+        title: "Why Newcastle should copy Sunderland",
+        url: "http://www.bbc.co.uk/sport/football/34985230",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/12F6F/production/_86997677_newcastlemanagerstevemcclaren.jpg",
+          altText: "Newcastle manager Steve McClaren",
+          copyright: "Reuters"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: false,
+        description: "Newcastle lack know-how but there are still ways for them to beat Liverpool's pressing game, explains MOTD pundit Danny Murphy.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:football:35006347",
+        title: "Rooney ruled out with ankle injury",
+        url: "http://www.bbc.co.uk/sport/football/35006347",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/1207D/production/_87035837_rooney_large_getty.jpg",
+          altText: "Manchester United captain Wayne Rooney",
+          copyright: "Getty Images"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: false,
+        description: "Wayne Rooney will miss Manchester United's pivotal Champions League tie at Wolfsburg with a \"nasty\" ankle injury.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:football:35008894",
+        title: "Coutinho a doubt for Newcastle match",
+        url: "http://www.bbc.co.uk/sport/football/35008894",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/74D0/production/_87040992_cou.jpg",
+          altText: "Philippe Coutinho",
+          copyright: "Getty Images"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: false,
+        description: "Liverpool manager Jurgen Klopp has yet to decide if Philippe Coutinho is fit enough to face Newcastle United on Sunday.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:football:35004204",
+        title: "Cazorla could be out until March",
+        url: "http://www.bbc.co.uk/sport/football/35004204",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/18455/production/_87031499_cazorla_getty.jpg",
+          altText: "Arsenal midfielder Santi Cazorla",
+          copyright: "Getty Images"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: false,
+        description: "Arsenal manager Arsene Wenger says a knee injury could keep midfielder Santi Cazorla out until March.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:football:35007482",
+        title: "Mourinho has no issue with night out",
+        url: "http://www.bbc.co.uk/sport/football/35007482",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/1548F/production/_87038178_mour2.jpg",
+          altText: "Jose Mourinho",
+          copyright: "Getty Images"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: false,
+        description: "Chelsea manager Jose Mourinho says he had no issue with a players' night out, and revealed Thibaut Courtois is fit again.",
+        cta: { }
+      },
+      {
+        urn: "urn:bbc:cps:sport:football:34951742",
+        title: "Stoke City v Manchester City",
+        url: "http://www.bbc.co.uk/sport/football/34951742",
+        image: {
+          templateUrl: "ichef.test.bbci.co.uk/curationkit-ichef/$recipe/cpsprodpb/1FC5/production/_87033180_gettyimages-454383730.jpg",
+          altText: "Mark Hughes and Manuel Pellegrini",
+          copyright: "Getty Images"
+        },
+        attribution: "Football",
+        assetType: "article",
+        liveBadge: false,
+        description: "Preview followed by live coverage of Saturday's Premier League game between Stoke City and Manchester City.",
+        cta: { }
+      }
+    ],
+    isNew: true,
+    footer: {
+      title: "More from other",
+      url: "http://www.bbc.com/earth/uk"
+    },
+    colorPalette: "news",
+    status: "success"
+  },
+  {
+    type: "tv-radio",
+    title: "TV & Radio module",
+    recommendationsTitle: "",
+    model: [
+      {
+        urn: "urn:bbc:nitro:b021mc42",
+        title: "Would I Lie to You?",
+        url: "http://www.bbc.co.uk/iplayer/episode/b021mc42",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p01jy0n7.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Episode 5",
+          series: "Series 7",
+          brand: "Would I Lie to You?"
+        },
+        attribution: "BBC One",
+        duration: {
+          dateTime: "PT30M",
+          formatted: "30 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "With guest panellists Susan Calman, Richard Osman, Carol Kirkwood and David O'Doherty.",
+        longTitle: "Would I Lie to You?",
+        longSubtitle: "Series 7: Episode 5",
+        subtitle: "Series 7: Episode 5",
+        cta: {
+          type: "video",
+          text: {
+            screen: "Watch Now",
+            reader: "Watch video"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:b06qmm3k",
+        title: "The One Show",
+        url: "http://www.bbc.co.uk/iplayer/episode/b06qmm3k",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p03b3tnw.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "04/12/2015",
+          series: null,
+          brand: "The One Show"
+        },
+        attribution: "BBC One",
+        duration: {
+          dateTime: "PT30M",
+          formatted: "30 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Alex Jones and Ricky Wilson are joined by Len Goodman and Bake Off winner Nadiya Hussain.",
+        longTitle: "The One Show",
+        longSubtitle: "04/12/2015",
+        subtitle: "04/12/2015",
+        cta: {
+          type: "video",
+          text: {
+            screen: "Watch Now",
+            reader: "Watch video"
+          }
+        }
+      }
+    ],
+    minItems: 1,
+    maxItems: 10,
+    url: "http://www.bbc.co.uk/tv",
+    newTag: false,
+    footer: {
+      title: "More from TV",
+      url: "http://www.bbc.co.uk/tv"
+    },
+    status: "success"
+  },
+  {
+    type: "tv-radio-recommendations",
+    title: "TV Recs default content",
+    recommendationsTitle: "Recommended TV & Radio ",
+    model: [
+      {
+        urn: "urn:bbc:nitro:b06rfwk3",
+        title: "EastEnders",
+        url: "http://www.bbc.co.uk/iplayer/episode/b06rfwk3",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p039cpgk.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: "03/12/2015",
+          episode: "03/12/2015",
+          series: null,
+          brand: "EastEnders"
+        },
+        attribution: "BBC One",
+        duration: {
+          dateTime: "PT30M",
+          formatted: "30 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Sharon tries her hardest to bring her family back together.",
+        longTitle: "EastEnders",
+        longSubtitle: "03/12/2015",
+        subtitle: "03/12/2015",
+        cta: {
+          type: "video",
+          text: {
+            screen: "Watch Now",
+            reader: "Watch video"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:b06rfb9z",
+        title: "The Apprentice",
+        url: "http://www.bbc.co.uk/iplayer/episode/b06rfb9z",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p039wbp1.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: "Property Agents",
+          episode: "Episode 9",
+          series: "Series 11",
+          brand: "The Apprentice"
+        },
+        attribution: "BBC One",
+        duration: {
+          dateTime: "PT1H",
+          formatted: "60 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Lord Sugar throws the teams into the London property market.",
+        longTitle: "The Apprentice",
+        longSubtitle: "Series 11: Episode 9 Property Agents",
+        subtitle: "Series 11: Episode 9 Property Agents",
+        cta: {
+          type: "video",
+          text: {
+            screen: "Watch Now",
+            reader: "Watch video"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:b06rhpb3",
+        title: "The Last Kingdom",
+        url: "http://www.bbc.co.uk/iplayer/episode/b06rhpb3",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p038x56h.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Episode 7",
+          series: "The Last Kingdom",
+          brand: null
+        },
+        attribution: "BBC Two",
+        duration: {
+          dateTime: "PT58M",
+          formatted: "58 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "The Danes invade Wessex and Uhtred is driven to hiding in the marshlands with King Alfred.",
+        longTitle: "The Last Kingdom",
+        longSubtitle: "Episode 7",
+        subtitle: "Episode 7",
+        cta: {
+          type: "video",
+          text: {
+            screen: "Watch Now",
+            reader: "Watch video"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:b06r88nq",
+        title: "MasterChef: The Professionals",
+        url: "http://www.bbc.co.uk/iplayer/episode/b06r88nq",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p038wvcl.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Episode 12",
+          series: "Series 8",
+          brand: "MasterChef: The Professionals"
+        },
+        attribution: "BBC Two",
+        duration: {
+          dateTime: "PT59M",
+          formatted: "59 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "The week's six best chefs serve up a two-course menu to three restaurant critics.",
+        longTitle: "MasterChef: The Professionals",
+        longSubtitle: "Series 8: Episode 12",
+        subtitle: "Series 8: Episode 12",
+        cta: {
+          type: "video",
+          text: {
+            screen: "Watch Now",
+            reader: "Watch video"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:b06r95rs",
+        title: "Russell Howard's Good News",
+        url: "http://www.bbc.co.uk/iplayer/episode/b06r95rs",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p0299vry.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "Episode 7",
+          series: "Series 10",
+          brand: "Russell Howard's Good News"
+        },
+        attribution: "BBC Two",
+        duration: {
+          dateTime: "PT30M",
+          formatted: "30 mins"
+        },
+        assetType: "Video",
+        liveBadge: false,
+        description: "Russell Howard looks at the parliamentary vote on airstrikes in Syria.",
+        longTitle: "Russell Howard's Good News",
+        longSubtitle: "Series 10: Episode 7",
+        subtitle: "Series 10: Episode 7",
+        cta: {
+          type: "video",
+          text: {
+            screen: "Watch Now",
+            reader: "Watch video"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:p039qlk2",
+        title: "Annie Mac",
+        url: "http://www.bbc.co.uk/programmes/p039qlk2",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p039qljq.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: "Coldplay - Hymn For The Weekend",
+          episode: null,
+          series: null,
+          brand: "Annie Mac"
+        },
+        attribution: "BBC Radio 1",
+        duration: {
+          dateTime: "PT11M39S",
+          formatted: "11 mins"
+        },
+        assetType: "Audio",
+        liveBadge: false,
+        description: "Hymn For The Weekend by Coldplay is Annie Mac's Hottest Record In The World.",
+        longTitle: "Annie Mac",
+        longSubtitle: "Coldplay - Hymn For The Weekend",
+        subtitle: "Coldplay - Hymn For The Weekend",
+        cta: {
+          type: "audio",
+          text: {
+            screen: "Listen Now",
+            reader: "Listen to audio"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:p039wy7f",
+        title: "In Short",
+        url: "http://www.bbc.co.uk/programmes/p039wy7f",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p039wy6k.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: "Cyber psychologist: I wouldn't let children use internet",
+          episode: null,
+          series: null,
+          brand: "In Short"
+        },
+        attribution: "BBC Radio 5 live",
+        duration: {
+          dateTime: "PT2M55S",
+          formatted: "2 mins"
+        },
+        assetType: "Audio",
+        liveBadge: false,
+        description: "Professor Mary Aiken warns the internet in it's current state is not \"fit for purpose\".",
+        longTitle: "In Short",
+        longSubtitle: "Cyber psychologist: I wouldn't let children use internet",
+        subtitle: "Cyber psychologist: I wouldn't let children use...",
+        cta: {
+          type: "audio",
+          text: {
+            screen: "Listen Now",
+            reader: "Listen to audio"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:b06qmpqy",
+        title: "The Archers",
+        url: "http://www.bbc.co.uk/programmes/b06qmpqy",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p01t7xy8.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: null,
+          episode: "03/12/2015",
+          series: null,
+          brand: "The Archers"
+        },
+        attribution: "BBC Radio 4",
+        duration: {
+          dateTime: "PT14M",
+          formatted: "14 mins"
+        },
+        assetType: "Audio",
+        liveBadge: false,
+        description: "Too much information for Helen?",
+        longTitle: "The Archers",
+        longSubtitle: "03/12/2015",
+        subtitle: "03/12/2015",
+        cta: {
+          type: "audio",
+          text: {
+            screen: "Listen Now",
+            reader: "Listen to audio"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:p039zd2v",
+        title: "Sport Today",
+        url: "http://www.bbc.co.uk/programmes/p039zd2v",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p039zctr.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: "Conor McGregor: I'm like Rocky and Clubber Lang",
+          episode: null,
+          series: null,
+          brand: "Sport Today"
+        },
+        attribution: "BBC World Service",
+        duration: {
+          dateTime: "PT56S",
+          formatted: "1 min"
+        },
+        assetType: "Audio",
+        liveBadge: false,
+        description: "UFC fighter Conor McGregor says he's a mix of Rocky Balboa and Clubber Lang",
+        longTitle: "Sport Today",
+        longSubtitle: "Conor McGregor: I'm like Rocky and Clubber Lang",
+        subtitle: "Conor McGregor: I'm like Rocky and Clubber Lang",
+        cta: {
+          type: "audio",
+          text: {
+            screen: "Listen Now",
+            reader: "Listen to audio"
+          }
+        }
+      },
+      {
+        urn: "urn:bbc:nitro:p03b0p11",
+        title: "World Football",
+        url: "http://www.bbc.co.uk/programmes/p03b0p11",
+        image: {
+          templateUrl: "ichef.bbci.co.uk/images/ic/$recipe/p03b0nzm.jpg",
+          altText: null,
+          copyright: null
+        },
+        titles: {
+          asset: "Mignolet: Joker Klopp has lifted the Liverpool camp",
+          episode: null,
+          series: null,
+          brand: "World Football"
+        },
+        attribution: "BBC World Service",
+        duration: {
+          dateTime: "PT1M23S",
+          formatted: "1 min"
+        },
+        assetType: "Audio",
+        liveBadge: false,
+        description: "Simon Mignolet says Liverpool must keep improving, despite winning 7 from the last 8.",
+        longTitle: "World Football",
+        longSubtitle: "Mignolet: Joker Klopp has lifted the Liverpool camp",
+        subtitle: "Mignolet: Joker Klopp has lifted the Liverpool ...",
+        cta: {
+          type: "audio",
+          text: {
+            screen: "Listen Now",
+            reader: "Listen to audio"
+          }
+        }
+      }
+    ],
+    minItems: 1,
+    maxItems: 10,
+    url: "http://www.bbc.co.uk/iplayer",
+    newTag: false,
+    footer: {
+      title: "More from BBC iPlayer",
+      url: "http://www.bbc.co.uk/iplayer"
+    },
+    status: "success"
+  }
+]
