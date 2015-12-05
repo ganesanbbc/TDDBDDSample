@@ -6,12 +6,17 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.Toast;
 
+import com.cts.sample.tddbdddemo.AndroidResourceDataFetcher;
 import com.cts.sample.tddbdddemo.R;
 import com.cts.sample.tddbdddemo.collectionmanagement.CollectionModel;
 import com.cts.sample.tddbdddemo.introscreen.WelcomeFragment.OnWelcomeFragmentInteractionListener;
 import com.cts.sample.tddbdddemo.syncsample.SyncService;
 import com.cts.sample.tddbdddemo.syncsample.SyncServiceHelper;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import com.google.gson.JsonSyntaxException;
 
 import java.util.ArrayList;
 
@@ -21,6 +26,7 @@ public class WelcomeScreenActivity extends FragmentActivity
 
 
     private Gson gson;
+    private AndroidResourceDataFetcher androidResourceDataFetcher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +36,35 @@ public class WelcomeScreenActivity extends FragmentActivity
 
         testGSON();
 
+
+        androidResourceDataFetcher = new AndroidResourceDataFetcher(getBaseContext(), R.raw.content);
+
+        convertJson();
+
         SyncServiceHelper.showNotification(this, true);
+    }
+
+    private void convertJson() {
+        String json = new String(androidResourceDataFetcher.fetch());
+        JsonArray jArray = new JsonParser().parse(json).getAsJsonArray();
+        ArrayList<CollectionVO> hpCollectionList = new ArrayList<CollectionVO>();
+
+        for (JsonElement obj : jArray) {
+            CollectionVO collection=null;
+            try {
+                 collection = gson.fromJson(obj, CollectionVO.class);
+            } catch (JsonSyntaxException j) {
+
+            }
+
+            if (null!= collection && !collection.status.equalsIgnoreCase("error"))
+                hpCollectionList.add(collection);
+        }
+
+        for (CollectionVO collectionVO : hpCollectionList) {
+            System.out.println(collectionVO);
+        }
+        System.out.println(hpCollectionList.size());
     }
 
     private void testGSON() {

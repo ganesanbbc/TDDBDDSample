@@ -1,13 +1,14 @@
-package com.cts.sample.tddbdddemo;
+package com.cts.sample.tddbdddemo.urlfetch;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 
+import com.cts.sample.tddbdddemo.R;
 import com.cts.sample.tddbdddemo.dialogs.AlertDialogFragment;
 import com.cts.sample.tddbdddemo.introscreen.WelcomeFragment;
-import com.cts.sample.tddbdddemo.login.LoginFragmentView;
+import com.cts.sample.tddbdddemo.login_mvp.LoginFragmentView;
 import com.cts.sample.tddbdddemo.urlfetch.LandingFragment;
 
 public class MainActivity extends FragmentActivity

@@ -1,8 +1,8 @@
 package com.cts.sample.tddbdddemo.util;
 
-import com.cts.sample.tddbdddemo.login.LoginPresenter;
-import com.cts.sample.tddbdddemo.login.LoginFragmentViewCallback;
-import com.cts.sample.tddbdddemo.login.LoginPresenterImple;
+import com.cts.sample.tddbdddemo.login_mvp.LoginPresenter;
+import com.cts.sample.tddbdddemo.login_mvp.LoginFragmentViewCallback;
+import com.cts.sample.tddbdddemo.login_mvp.LoginPresenterImple;
 
 import org.junit.Test;
 

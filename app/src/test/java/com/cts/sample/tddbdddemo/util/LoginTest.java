@@ -1,7 +1,7 @@
 package com.cts.sample.tddbdddemo.util;
 
-import com.cts.sample.tddbdddemo.login.LoginImple;
-import com.cts.sample.tddbdddemo.login.LoginModel;
+import com.cts.sample.tddbdddemo.login_mvp.LoginImple;
+import com.cts.sample.tddbdddemo.login_mvp.LoginModel;
 
 import org.junit.Test;
 

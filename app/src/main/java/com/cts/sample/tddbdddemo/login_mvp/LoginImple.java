@@ -1,4 +1,4 @@
-package com.cts.sample.tddbdddemo.login;
+package com.cts.sample.tddbdddemo.login_mvp;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
