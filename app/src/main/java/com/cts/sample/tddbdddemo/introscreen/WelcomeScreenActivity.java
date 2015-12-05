@@ -1,17 +1,12 @@
 package com.cts.sample.tddbdddemo.introscreen;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.widget.Toast;
 
 import com.cts.sample.tddbdddemo.AndroidResourceDataFetcher;
 import com.cts.sample.tddbdddemo.R;
 import com.cts.sample.tddbdddemo.collectionmanagement.CollectionModel;
-import com.cts.sample.tddbdddemo.introscreen.WelcomeFragment.OnWelcomeFragmentInteractionListener;
-import com.cts.sample.tddbdddemo.syncsample.SyncService;
-import com.cts.sample.tddbdddemo.syncsample.SyncServiceHelper;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -21,8 +16,7 @@ import com.google.gson.JsonSyntaxException;
 import java.util.ArrayList;
 
 
-public class WelcomeScreenActivity extends FragmentActivity
-        implements OnWelcomeFragmentInteractionListener {
+public class WelcomeScreenActivity extends FragmentActivity {
 
 
     private Gson gson;
@@ -41,7 +35,7 @@ public class WelcomeScreenActivity extends FragmentActivity
 
         convertJson();
 
-        SyncServiceHelper.showNotification(this, true);
+//        SyncServiceHelper.showNotification(this, true);
     }
 
     private void convertJson() {
@@ -50,14 +44,14 @@ public class WelcomeScreenActivity extends FragmentActivity
         ArrayList<CollectionVO> hpCollectionList = new ArrayList<CollectionVO>();
 
         for (JsonElement obj : jArray) {
-            CollectionVO collection=null;
+            CollectionVO collection = null;
             try {
-                 collection = gson.fromJson(obj, CollectionVO.class);
+                collection = gson.fromJson(obj, CollectionVO.class);
             } catch (JsonSyntaxException j) {
 
             }
 
-            if (null!= collection && !collection.status.equalsIgnoreCase("error"))
+            if (null != collection && !collection.status.equalsIgnoreCase("error"))
                 hpCollectionList.add(collection);
         }
 
@@ -85,16 +79,6 @@ public class WelcomeScreenActivity extends FragmentActivity
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.fragment_container, welcomeFragment);
         ft.commit();
-    }
-
-    @Override
-    public void onLoginButtonClicked() {
-        Toast.makeText(this, "called", Toast.LENGTH_LONG).show();
-    }
-
-    @Override
-    public void onRegisterButtonClicked() {
-
     }
 
 

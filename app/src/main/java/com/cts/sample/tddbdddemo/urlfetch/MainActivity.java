@@ -12,8 +12,8 @@ import com.cts.sample.tddbdddemo.login_mvp.LoginFragmentView;
 import com.cts.sample.tddbdddemo.urlfetch.LandingFragment;
 
 public class MainActivity extends FragmentActivity
-    implements WelcomeFragment.OnWelcomeFragmentInteractionListener,
-    LoginFragmentView.OnLoginListener, LandingFragment.OnLandingFragmentListener{
+        implements
+        LoginFragmentView.OnLoginListener, LandingFragment.OnLandingFragmentListener {
 
     public static final String APP_PREFS = "AppPrefs";
     public static final String SESSION_START_TS = "session_start_ts";
@@ -34,13 +34,12 @@ public class MainActivity extends FragmentActivity
     }
 
 
-
     private void showWelcomeFragment() {
         WelcomeFragment welcomeFragment = new WelcomeFragment();
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         if (getSupportFragmentManager().getFragments() != null
-                && getSupportFragmentManager().getFragments().size() > 0 )
+                && getSupportFragmentManager().getFragments().size() > 0)
             ft.replace(R.id.fragment_container, welcomeFragment);
         else
             ft.add(R.id.fragment_container, welcomeFragment);
@@ -62,7 +61,7 @@ public class MainActivity extends FragmentActivity
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         if (getSupportFragmentManager().getFragments() != null
-                && getSupportFragmentManager().getFragments().size() > 0 )
+                && getSupportFragmentManager().getFragments().size() > 0)
             ft.replace(R.id.fragment_container, landingFragment);
         else
             ft.add(R.id.fragment_container, landingFragment);
@@ -70,15 +69,6 @@ public class MainActivity extends FragmentActivity
         ft.commit();
     }
 
-    @Override
-    public void onLoginButtonClicked() {
-        showLoginFragment();
-    }
-
-    @Override
-    public void onRegisterButtonClicked() {
-        //Nothing to do
-    }
 
     @Override
     public void onLoggedIn() {
@@ -103,10 +93,12 @@ public class MainActivity extends FragmentActivity
         alertDialog.show(getSupportFragmentManager(), "AlertDialogFragment");
     }
 
-    /************** Session Handling ******************/
+    /**************
+     * Session Handling
+     ******************/
 
     private void createSession(String timeStampInMillis) {
-        if(timeStampInMillis != null && !timeStampInMillis.isEmpty()) {
+        if (timeStampInMillis != null && !timeStampInMillis.isEmpty()) {
             setSessionStartTime(timeStampInMillis);
         }
     }
@@ -126,7 +118,7 @@ public class MainActivity extends FragmentActivity
         strTimeStamp = strTimeStamp.substring(0, strTimeStamp.indexOf("ms"));
 
         boolean session_valid = false;
-        if(!strTimeStamp.isEmpty()) {
+        if (!strTimeStamp.isEmpty()) {
             long startTS = Long.valueOf(strTimeStamp).longValue();
             long currTS = System.currentTimeMillis();
             session_valid = (currTS - startTS) < SESSION_VALIDITY ? true : false;
@@ -139,7 +131,7 @@ public class MainActivity extends FragmentActivity
         SharedPreferences prefs = getSharedPreferences(APP_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
 
-        editor.putString(SESSION_START_TS, timeStampInMillis+"ms");
+        editor.putString(SESSION_START_TS, timeStampInMillis + "ms");
         editor.commit();
     }
 }
