@@ -14,12 +14,14 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.cts.sample.tddbdddemo.R;
 
 import org.w3c.dom.Text;
 
+import static com.cts.sample.tddbdddemo.R.id.header;
 import static com.cts.sample.tddbdddemo.R.id.viewpager;
 
 /**
@@ -29,6 +31,8 @@ public class WelcomeFragment extends Fragment {
 
     private ViewPager viewPager;
     private ValueAnimator mColorAnimation;
+
+
 
 
     public WelcomeFragment() {
@@ -46,35 +50,8 @@ public class WelcomeFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         viewPager = (ViewPager) view.findViewById(viewpager);
-        viewPager.setBackgroundColor(Color.BLACK);
         viewPager.setAdapter(new MyPageAdapter(getActivity().getSupportFragmentManager()));
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                mColorAnimation.setCurrentPlayTime((long)((positionOffset + position)* 10000000000l));
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
-        mColorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), R.color.colorAccent, R.color.colorPrimary, R.color.colorPrimaryDark);
-        mColorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-
-            @Override
-            public void onAnimationUpdate(ValueAnimator animator) {
-                viewPager.setBackgroundColor((Integer)animator.getAnimatedValue());
-            }
-
-        });
-        mColorAnimation.setDuration((3 - 1) * 10000000000l);
-
+        viewPager.setPageTransformer(true, new DepthPageTransformer());
     }
 
     private class MyPageAdapter extends FragmentPagerAdapter {
@@ -89,7 +66,7 @@ public class WelcomeFragment extends Fragment {
 
         @Override
         public int getCount() {
-            return 3    ;
+            return 3;
         }
     }
 
@@ -98,6 +75,12 @@ public class WelcomeFragment extends Fragment {
 
         private TextView textView;
         private int position;
+        private LinearLayout headerView;
+
+        int[] bgColor = {R.color.material_deep_teal_500,
+                R.color.material_blue_grey_800,
+                R.color.colorAccent,
+                R.color.material_blue_grey_950};
 
         public MyFragment(int position) {
             this.position = position;
@@ -114,6 +97,9 @@ public class WelcomeFragment extends Fragment {
             super.onViewCreated(view, savedInstanceState);
             textView = (TextView) view.findViewById(R.id.textview);
             textView.setText(String.valueOf(position));
+            headerView = (LinearLayout) view.findViewById(R.id.header);
+            headerView.setBackgroundResource(bgColor[position]);
+//            headerView.setBackgroundColor(bgColor[position]);
         }
     }
 }
