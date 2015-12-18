@@ -9,7 +9,6 @@ import com.cts.sample.tddbdddemo.R;
 import com.cts.sample.tddbdddemo.dialogs.AlertDialogFragment;
 import com.cts.sample.tddbdddemo.introscreen.WelcomeFragment;
 import com.cts.sample.tddbdddemo.login_mvp.LoginFragmentView;
-import com.cts.sample.tddbdddemo.urlfetch.LandingFragment;
 
 public class MainActivity extends FragmentActivity
         implements
@@ -22,7 +21,7 @@ public class MainActivity extends FragmentActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_old);
 
         if (isSessionValid()) {
             showLandingFragment();
