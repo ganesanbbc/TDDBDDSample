@@ -34,7 +34,7 @@ public class AppController extends Application {
         return mRequestQueue;
     }
 
-    public <T> void addToRequestQueue(Request<T> req) {
+    public <T> void addToRequestQueue(Request<T> req, String tag_json_obj) {
         req.setTag(TAG);
         getRequestQueue().add(req);
     }

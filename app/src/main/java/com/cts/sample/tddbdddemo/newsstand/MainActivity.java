@@ -5,6 +5,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.view.DragEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AbsListView;
 
@@ -41,12 +43,39 @@ public class MainActivity extends FragmentActivity implements ScrollTabHolder {
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setOffscreenPageLimit(4);
 
+        mViewPager.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                System.out.println(event.getX() + ":" + event.getY());
+                return false;
+            }
+        });
+
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
         mPagerAdapter.setTabHolderScrollingContent(this);
 
         mViewPager.setAdapter(mPagerAdapter);
 
-        mLastY = 0;
+
+        mViewPager.setOnDragListener(new View.OnDragListener() {
+            @Override
+            public boolean onDrag(View v, DragEvent event) {
+                System.out.println(event.getX() + "::" + event.getY());
+                return false;
+            }
+        });
+
+//        mViewPager.setOnDragListener(new View.OnDragListener() {
+//            @Override
+//            public boolean onDrag(View v, DragEvent event) {
+//                System.out.println("called here");
+//                return false;
+//            }
+//        });
+
+//        mLastY = 0;
+
+
     }
 
 
@@ -55,14 +84,7 @@ public class MainActivity extends FragmentActivity implements ScrollTabHolder {
                          int visibleItemCount, int totalItemCount, int pagePosition) {
         if (mViewPager.getCurrentItem() == pagePosition) {
             int scrollY = getScrollY(view);
-            if (NEEDS_PROXY) {
-                //TODO is not good
-                mLastY = -Math.max(-scrollY, mMinHeaderTranslation);
-                mHeader.scrollTo(0, mLastY);
-                mHeader.postInvalidate();
-            } else {
-                mHeader.setTranslationY(Math.max(-scrollY, mMinHeaderTranslation));
-            }
+            mHeader.setTranslationY(Math.max(-scrollY, mMinHeaderTranslation));
         }
     }
 
@@ -79,6 +101,7 @@ public class MainActivity extends FragmentActivity implements ScrollTabHolder {
         if (firstVisiblePosition >= 1) {
             headerHeight = mHeaderHeight;
         }
+//        System.out.println(-top + firstVisiblePosition * c.getHeight() + headerHeight);
 
         return -top + firstVisiblePosition * c.getHeight() + headerHeight;
     }

@@ -2,6 +2,7 @@ package com.cts.sample.tddbdddemo.newsstand;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.DragEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -16,55 +17,56 @@ import com.cts.sample.tddbdddemo.R;
 
 import java.util.ArrayList;
 
-public class SampleListFragment extends ScrollTabHolderFragment{
+public class SampleListFragment extends ScrollTabHolderFragment {
 
-	private static final String ARG_POSITION = "position";
+    private static final String ARG_POSITION = "position";
 
-	private ListView mListView;
-	private ArrayList<String> mListItems;
+    private ListView mListView;
+    private ArrayList<String> mListItems;
 
-	private int mPosition;
+    private int mPosition;
 
-	public static Fragment newInstance(int position) {
-		SampleListFragment f = new SampleListFragment();
-		Bundle b = new Bundle();
-		b.putInt(ARG_POSITION, position);
-		f.setArguments(b);
-		return f;
-	}
+    public static Fragment newInstance(int position) {
+        SampleListFragment f = new SampleListFragment();
+        Bundle b = new Bundle();
+        b.putInt(ARG_POSITION, position);
+        f.setArguments(b);
+        return f;
+    }
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		mPosition = getArguments().getInt(ARG_POSITION);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPosition = getArguments().getInt(ARG_POSITION);
 
-		mListItems = new ArrayList<String>();
+        mListItems = new ArrayList<String>();
 
-		for (int i = 1; i <= 100; i++) {
-			mListItems.add(i + ". item - currnet page: " + (mPosition + 1));
-		}
-	}
+        for (int i = 1; i <= 100; i++) {
+            mListItems.add(i + ". item - currnet page: " + (mPosition + 1));
+        }
+    }
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.fragment_list, null);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_list, null);
 
-		mListView = (ListView) v.findViewById(R.id.listView);
+        mListView = (ListView) v.findViewById(R.id.listView);
 
-		View placeHolderView = inflater.inflate(R.layout.view_header_placeholder, mListView, false);
-		placeHolderView.setBackgroundColor(0xFFFFFFFF);
-		mListView.addHeaderView(placeHolderView);
+        View placeHolderView = inflater.inflate(R.layout.view_header_placeholder, mListView, false);
+        placeHolderView.setBackgroundColor(0xFFFFFFFF);
+        mListView.addHeaderView(placeHolderView);
 
-		return v;
-	}
+        return v;
+    }
 
-	@Override
-	public void onActivityCreated(Bundle savedInstanceState) {
-		super.onActivityCreated(savedInstanceState);
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
-		mListView.setOnScrollListener(new OnScroll());
-		mListView.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.list_item, android.R.id.text1, mListItems));
-		
+        mListView.setOnScrollListener(new OnScroll());
+        mListView.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.list_item, android.R.id.text1, mListItems));
+
+
 //		if(MainActivity.NEEDS_PROXY){//in my moto phone(android 2.1),setOnScrollListener do not work well
 //			mListView.setOnTouchListener(new OnTouchListener() {
 //				@Override
@@ -75,29 +77,31 @@ public class SampleListFragment extends ScrollTabHolderFragment{
 //				}
 //			});
 //		}
-	}
+    }
 
 
-	public class OnScroll implements OnScrollListener {
+    public class OnScroll implements OnScrollListener {
 
-		@Override
-		public void onScrollStateChanged(AbsListView view, int scrollState) {
+        @Override
+        public void onScrollStateChanged(AbsListView view, int scrollState) {
 
-		}
+        }
 
-		@Override
-		public void onScroll(AbsListView view, int firstVisibleItem,
-				int visibleItemCount, int totalItemCount) {
-			if (mScrollTabHolder != null)
-				mScrollTabHolder.onScroll(view, firstVisibleItem, visibleItemCount, totalItemCount, mPosition);
-		}
+        @Override
+        public void onScroll(AbsListView view, int firstVisibleItem,
+                             int visibleItemCount, int totalItemCount) {
+            System.out.println("called onScroll");
+            if (mScrollTabHolder != null) {
+                mScrollTabHolder.onScroll(view, firstVisibleItem, visibleItemCount, totalItemCount, mPosition);
+            }
+        }
 
-	}
+    }
 
 
-	@Override
-	public void onScroll(AbsListView view, int firstVisibleItem,
-			int visibleItemCount, int totalItemCount, int pagePosition) {
-	}
+    @Override
+    public void onScroll(AbsListView view, int firstVisibleItem,
+                         int visibleItemCount, int totalItemCount, int pagePosition) {
+    }
 
 }
