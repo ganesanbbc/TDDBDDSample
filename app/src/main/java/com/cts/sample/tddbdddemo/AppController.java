@@ -5,7 +5,7 @@ import android.app.Application;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
-
+import com.cts.sample.tddbdddemo.urlfetch.BypassSSLCertificateManager;
 
 
 public class AppController extends Application {
@@ -24,6 +24,7 @@ public class AppController extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
+        BypassSSLCertificateManager.initBypassCertificate();
 
     }
 
